@@ -1,11 +1,11 @@
+<?php /** @var \Magento\Framework\View\Result\Page $this */ ?>
 <!doctype html>
 <html>
 <head>
+    <title><?php echo $this->getConfig()->getTitle()->get(); ?></title>
     <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.28.15/js/jquery.tablesorter.min.js"></script>
-    <style>
-        <link rel="stylesheet" href="<? echo $this->getViewFileUrl('Mirasvit_Profiler::css/module.css')?>">
-    </style>
+    <link rel="stylesheet" type="text/css" media="all" href="<? echo $this->getViewFileUrl('Mirasvit_Profiler::css/module.css'); ?>" />
 </head>
 <body>
 <?= $layoutContent ?>
